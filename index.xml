@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Jacob J Webber</title>
-    <link>http://jacobjwebber.github.io/index.xml</link>
+    <link>https://jacobjwebber.github.io/index.xml</link>
     <description>Recent content on Jacob J Webber</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 29 Dec 2016 20:07:17 +0000</lastBuildDate>
-    <atom:link href="http://jacobjwebber.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://jacobjwebber.github.io/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Building a Personal Website with Hugo</title>
-      <link>http://jacobjwebber.github.io/post/new-blog/</link>
+      <link>https://jacobjwebber.github.io/post/new-blog/</link>
       <pubDate>Thu, 29 Dec 2016 20:07:17 +0000</pubDate>
       
-      <guid>http://jacobjwebber.github.io/post/new-blog/</guid>
+      <guid>https://jacobjwebber.github.io/post/new-blog/</guid>
       <description>
 
 &lt;h2 id=&#34;new-blog&#34;&gt;New Blog!&lt;/h2&gt;
@@ -54,16 +54,16 @@ all. If you have $GOPATH/bin added to your $PATH then&lt;/p&gt;
     
     <item>
       <title>About Me</title>
-      <link>http://jacobjwebber.github.io/about/</link>
+      <link>https://jacobjwebber.github.io/about/</link>
       <pubDate>Thu, 29 Dec 2016 00:00:00 +0000</pubDate>
       
-      <guid>http://jacobjwebber.github.io/about/</guid>
+      <guid>https://jacobjwebber.github.io/about/</guid>
       <description>
 
 &lt;h2 id=&#34;i-am-jacob-josiah-webber&#34;&gt;I am Jacob Josiah Webber&lt;/h2&gt;
 
-&lt;p&gt;Please download a pdf of my &lt;a href=&#34;http://jacobjwebber.github.io/cv.pdf&#34;&gt;cv&lt;/a&gt;.
-Or go back to my &lt;a href=&#34;http://jacobjwebber.github.io/&#34;&gt;home&lt;/a&gt; page for links to my social/github accounts.&lt;/p&gt;
+&lt;p&gt;Please download a pdf of my &lt;a href=&#34;https://jacobjwebber.github.io/cv.pdf&#34;&gt;cv&lt;/a&gt;.
+Or go back to my &lt;a href=&#34;https://jacobjwebber.github.io/&#34;&gt;home&lt;/a&gt; page for links to my social/github accounts.&lt;/p&gt;
 
 &lt;h2 id=&#34;academic&#34;&gt;Academic&lt;/h2&gt;
 
