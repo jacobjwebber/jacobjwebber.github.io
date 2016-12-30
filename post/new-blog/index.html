@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title> Building a Personal Website with Hugo &middot; Jacob J Webber </title>
+
+        <meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+<meta name="generator" content="Hugo 0.13" />
+
+
+<script   src="https://code.jquery.com/jquery-3.1.1.min.js"   integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="   crossorigin="anonymous"></script>
+
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
+
+
+<link rel="stylesheet" href="http://jacobjwebber.github.io/css/nix.css">
+
+ 
+<link href="https://fonts.googleapis.com/css?family=Inconsolata|Open+Sans|Roboto|Montserrat|Concert+One" rel="stylesheet">
+
+
+
+
+    </head>
+
+    <body>
+        <header>
+<nav class="navbar navbar-default navbar-fixed-top navbar-inverse font-header">
+	<div class="container-fluid">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-1" aria-expanded="false">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a class="navbar-brand" id="green-terminal" href=http://jacobjwebber.github.io/>jjw@jacobjwebber ~ $</a>
+		</div>
+
+		
+		<div class="collapse navbar-collapse" id="navbar-collapse-1">
+			<ul class="nav navbar-nav navbar-right">
+				<li>
+					<a href="http://jacobjwebber.github.io/">/home/jjw</a>
+				</li>
+				
+				
+				<li >
+					<a href="/post">~/post</a>
+				</li>
+				
+				
+				<li >
+					<a href="/about">~/about</a>
+				</li>
+				
+
+			</ul>
+		</div>
+	</div>
+</nav>
+</header>
+
+        <div class="container wrapper">
+            <h1><a href="http://jacobjwebber.github.io/post/new-blog/">Building a Personal Website with Hugo</a></h1>
+            <span class="post-date">Dec 29, 2016 </span>
+            <div class="post-content">
+                
+
+<h2 id="new-blog">New Blog!</h2>
+
+<p>Where better to start a new blog than a blog post about how I made this blog.</p>
+
+<p>Over the last Christmas holidays I have started playing around with the Go programming languages. Wow! What a great
+programming language! At work I mainly wrote Java code, and at University I mainly use C. Go seems to combine a lot of
+the positive aspects of both. It also has a very interesting and neat model for writing parallel or concurrent programs.
+I hope to write a blog about this soon as I have been working on porting some OpenMP code over to Go.</p>
+
+<p>To show all this off I thought I had better make a personal website. I already had already set up a github pages repo
+and just needed some pages to fill it. I am not a big fan of (or very good at) doing web development or building GUIs of
+any sort, so wanted some way of automating this process. I read about Hugo, which is a static web generator built in Go,
+and it seemed to be a good fit for what I wanted.</p>
+
+<h3 id="installing-hugo">Installing Hugo</h3>
+
+<p>I have been playing with Go so I decided to install Hugo from sources, with a hope to maybe poking around in the source
+code at some point.
+With Go installed and a GOPATH environment variable set:</p>
+
+<blockquote>
+<p>cd $GOPATH/src &amp;&amp; go get -v github.com/spf13/hugo</p>
+</blockquote>
+
+<p>will cd to your go src dir and download all of the hugo source code, as well as its dependendencies, then compile it
+all. If you have $GOPATH/bin added to your $PATH then</p>
+
+<blockquote>
+<p>hugo help</p>
+</blockquote>
+
+<p>will work as expected.</p>
+
+            </div>
+            
+            <div class="post-comments">
+                
+            </div>
+            
+            <div class="push"></div>
+        </div>
+        <footer class="footer text-center">
+<p>Copyright &copy; 2016 JJW -
+<span class="credit">
+	Powered by 
+	<a target="_blank" href="https://gohugo.io">Hugo</a>
+	and 
+	<a target="_blank" href="https://github.com/LordMathis/hugo-theme-nix/">Nix</a> theme.
+</span>
+</p>
+</footer>
+
+    </body>

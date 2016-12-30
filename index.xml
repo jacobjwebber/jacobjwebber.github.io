@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Jacob J Webber</title>
+    <link>http://jacobjwebber.github.io/index.xml</link>
+    <description>Recent content on Jacob J Webber</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 29 Dec 2016 20:07:17 +0000</lastBuildDate>
+    <atom:link href="http://jacobjwebber.github.io/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Building a Personal Website with Hugo</title>
+      <link>http://jacobjwebber.github.io/post/new-blog/</link>
+      <pubDate>Thu, 29 Dec 2016 20:07:17 +0000</pubDate>
+      
+      <guid>http://jacobjwebber.github.io/post/new-blog/</guid>
+      <description>
+
+&lt;h2 id=&#34;new-blog&#34;&gt;New Blog!&lt;/h2&gt;
+
+&lt;p&gt;Where better to start a new blog than a blog post about how I made this blog.&lt;/p&gt;
+
+&lt;p&gt;Over the last Christmas holidays I have started playing around with the Go programming languages. Wow! What a great
+programming language! At work I mainly wrote Java code, and at University I mainly use C. Go seems to combine a lot of
+the positive aspects of both. It also has a very interesting and neat model for writing parallel or concurrent programs.
+I hope to write a blog about this soon as I have been working on porting some OpenMP code over to Go.&lt;/p&gt;
+
+&lt;p&gt;To show all this off I thought I had better make a personal website. I already had already set up a github pages repo
+and just needed some pages to fill it. I am not a big fan of (or very good at) doing web development or building GUIs of
+any sort, so wanted some way of automating this process. I read about Hugo, which is a static web generator built in Go,
+and it seemed to be a good fit for what I wanted.&lt;/p&gt;
+
+&lt;h3 id=&#34;installing-hugo&#34;&gt;Installing Hugo&lt;/h3&gt;
+
+&lt;p&gt;I have been playing with Go so I decided to install Hugo from sources, with a hope to maybe poking around in the source
+code at some point.
+With Go installed and a GOPATH environment variable set:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;cd $GOPATH/src &amp;amp;&amp;amp; go get -v github.com/spf13/hugo&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;will cd to your go src dir and download all of the hugo source code, as well as its dependendencies, then compile it
+all. If you have $GOPATH/bin added to your $PATH then&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;hugo help&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;will work as expected.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>About Me</title>
+      <link>http://jacobjwebber.github.io/about/</link>
+      <pubDate>Thu, 29 Dec 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://jacobjwebber.github.io/about/</guid>
+      <description>
+
+&lt;h2 id=&#34;i-am-jacob-josiah-webber&#34;&gt;I am Jacob Josiah Webber&lt;/h2&gt;
+
+&lt;p&gt;Please download a pdf of my &lt;a href=&#34;http://jacobjwebber.github.io/cv.pdf&#34;&gt;cv&lt;/a&gt;.
+Or go back to my &lt;a href=&#34;http://jacobjwebber.github.io/&#34;&gt;home&lt;/a&gt; page for links to my social/github accounts.&lt;/p&gt;
+
+&lt;h2 id=&#34;academic&#34;&gt;Academic&lt;/h2&gt;
+
+&lt;p&gt;Degrees:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Physics and Music BSc&lt;/li&gt;
+&lt;li&gt;High Performance Computing MSc (in progress)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;professional&#34;&gt;Professional&lt;/h2&gt;
+
+&lt;p&gt;Between my degrees I also worked for a year at Tesco Bank as a developer, splitting my time between working as a Java Developer, doing DevOps
+infrastructure, with a little bit of NodeJS/Express. I gained experience with:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Test-Driven Development&lt;/li&gt;
+&lt;li&gt;Agile/Scrum Development Practice&lt;/li&gt;
+&lt;li&gt;BASH&lt;/li&gt;
+&lt;li&gt;AWS Administration&lt;/li&gt;
+&lt;li&gt;Jenkins Build Server Administration&lt;/li&gt;
+&lt;li&gt;NodeJS&lt;/li&gt;
+&lt;li&gt;AngularJS&lt;/li&gt;
+&lt;li&gt;Java Programming with:
+
+&lt;ul&gt;
+&lt;li&gt;Spring&lt;/li&gt;
+&lt;li&gt;JUnit&lt;/li&gt;
+&lt;li&gt;Mockito&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;personal&#34;&gt;Personal&lt;/h2&gt;
+
+&lt;p&gt;As well as writing computer programs, I am also a fun guy.&lt;/p&gt;
+
+&lt;p&gt;Growing up I had an interest in music, as well as mathematics and physics. I played the violin quite successfully,
+playing in a number of youth orchsestras, including as a soloist. I managed to combine these two separate interests
+in my undergraduate degree. This was in Physics and Music at the University of Edinburgh.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
