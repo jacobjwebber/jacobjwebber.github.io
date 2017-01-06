@@ -88,24 +88,60 @@ and just needed some pages to fill it. I am not a big fan of (or very good at) d
 any sort, so wanted some way of automating this process. I read about Hugo, which is a static web generator built in Go,
 and it seemed to be a good fit for what I wanted.</p>
 
+<p>The basic principle is that you write a bunch of markdown files for all your posts and hugo will render it into a
+beautiful website. It works using the HTML templating library for Go. I haven&rsquo;t really looked into this yet, but it
+looks quite similar, at least superficially, to Mustache, which I used at my old job with Java.</p>
+
 <h3 id="installing-hugo">Installing Hugo</h3>
 
 <p>I have been playing with Go so I decided to install Hugo from sources, with a hope to maybe poking around in the source
 code at some point.
 With Go installed and a GOPATH environment variable set:</p>
 
-<blockquote>
-<p>cd $GOPATH/src &amp;&amp; go get -v github.com/spf13/hugo</p>
-</blockquote>
+<pre><code>cd $GOPATH/src &amp;&amp; go get -v github.com/spf13/hugo
+</code></pre>
 
 <p>will cd to your go src dir and download all of the hugo source code, as well as its dependendencies, then compile it
 all. If you have $GOPATH/bin added to your $PATH then</p>
 
-<blockquote>
-<p>hugo help</p>
-</blockquote>
+<pre><code>hugo help
+</code></pre>
 
-<p>will work as expected.</p>
+<p>will work as expected. Excellent!</p>
+
+<p>Now, ours is the privelege of easily building a web site.</p>
+
+<h3 id="my-first-hugo-website">My First (Hugo) Website</h3>
+
+<p>First use</p>
+
+<pre><code>hugo new site blog
+</code></pre>
+
+<p>to create a new directory with the basic files in. Then content can be added with the command</p>
+
+<pre><code>hugo new post/new-blog.md
+</code></pre>
+
+<p>This creates a new directory &lsquo;post&rsquo;, which will be mirrored in the site structure. Before generating a web page I had to
+add a theme. I am using the <a href="https://github.com/LordMathis/hugo-theme-nix">nix</a> theme, which I have a very high opinion
+of. Many thanks indeed to Lord Mathis for making it and making it open source.</p>
+
+<pre><code>mkdir themes
+cd themes
+git clone https://github.com/LordMathis/hugo-theme-nix
+</code></pre>
+
+<p>Hugo has a localhost server built in for your web site. It will watch your markdown files for changes. Great!</p>
+
+<pre><code>hugo server --theme=hugo-theme-nix --buildDrafts
+</code></pre>
+
+<p>Without the &lsquo;server&rsquo; argument, Hugo will just output the html files/css etc into a &lsquo;public&rsquo; dir.</p>
+
+<p>At present I manually copy this over into my github pages repo. I intend to automate this later. I will probably end up
+using Travis CI or something similar to build and deploy whenever I push to a specific branch in my Hugo <a href="https://github.com/jacobjwebber/hugo_blog">raw files git
+repo</a>.</p>
 
             </div>
             
@@ -116,9 +152,10 @@ all. If you have $GOPATH/bin added to your $PATH then</p>
             <div class="push"></div>
         </div>
         <footer class="footer text-center">
-<p>Copyright &copy; 2016 JJW -
+<p>Copyright &copy; 2017 JJW -
 <span class="credit">
-	Powered by 
+    <a target="_blank" href="/post/new-blog/">Built</a> 
+    using 
 	<a target="_blank" href="https://gohugo.io">Hugo</a>
 	and 
 	<a target="_blank" href="https://github.com/LordMathis/hugo-theme-nix/">Nix</a> theme.

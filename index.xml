@@ -31,24 +31,60 @@ and just needed some pages to fill it. I am not a big fan of (or very good at) d
 any sort, so wanted some way of automating this process. I read about Hugo, which is a static web generator built in Go,
 and it seemed to be a good fit for what I wanted.&lt;/p&gt;
 
+&lt;p&gt;The basic principle is that you write a bunch of markdown files for all your posts and hugo will render it into a
+beautiful website. It works using the HTML templating library for Go. I haven&amp;rsquo;t really looked into this yet, but it
+looks quite similar, at least superficially, to Mustache, which I used at my old job with Java.&lt;/p&gt;
+
 &lt;h3 id=&#34;installing-hugo&#34;&gt;Installing Hugo&lt;/h3&gt;
 
 &lt;p&gt;I have been playing with Go so I decided to install Hugo from sources, with a hope to maybe poking around in the source
 code at some point.
 With Go installed and a GOPATH environment variable set:&lt;/p&gt;
 
-&lt;blockquote&gt;
-&lt;p&gt;cd $GOPATH/src &amp;amp;&amp;amp; go get -v github.com/spf13/hugo&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;pre&gt;&lt;code&gt;cd $GOPATH/src &amp;amp;&amp;amp; go get -v github.com/spf13/hugo
+&lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;will cd to your go src dir and download all of the hugo source code, as well as its dependendencies, then compile it
 all. If you have $GOPATH/bin added to your $PATH then&lt;/p&gt;
 
-&lt;blockquote&gt;
-&lt;p&gt;hugo help&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;pre&gt;&lt;code&gt;hugo help
+&lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;will work as expected.&lt;/p&gt;
+&lt;p&gt;will work as expected. Excellent!&lt;/p&gt;
+
+&lt;p&gt;Now, ours is the privelege of easily building a web site.&lt;/p&gt;
+
+&lt;h3 id=&#34;my-first-hugo-website&#34;&gt;My First (Hugo) Website&lt;/h3&gt;
+
+&lt;p&gt;First use&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;hugo new site blog
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;to create a new directory with the basic files in. Then content can be added with the command&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;hugo new post/new-blog.md
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;This creates a new directory &amp;lsquo;post&amp;rsquo;, which will be mirrored in the site structure. Before generating a web page I had to
+add a theme. I am using the &lt;a href=&#34;https://github.com/LordMathis/hugo-theme-nix&#34;&gt;nix&lt;/a&gt; theme, which I have a very high opinion
+of. Many thanks indeed to Lord Mathis for making it and making it open source.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;mkdir themes
+cd themes
+git clone https://github.com/LordMathis/hugo-theme-nix
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Hugo has a localhost server built in for your web site. It will watch your markdown files for changes. Great!&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;hugo server --theme=hugo-theme-nix --buildDrafts
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Without the &amp;lsquo;server&amp;rsquo; argument, Hugo will just output the html files/css etc into a &amp;lsquo;public&amp;rsquo; dir.&lt;/p&gt;
+
+&lt;p&gt;At present I manually copy this over into my github pages repo. I intend to automate this later. I will probably end up
+using Travis CI or something similar to build and deploy whenever I push to a specific branch in my Hugo &lt;a href=&#34;https://github.com/jacobjwebber/hugo_blog&#34;&gt;raw files git
+repo&lt;/a&gt;.&lt;/p&gt;
 </description>
     </item>
     
@@ -62,7 +98,7 @@ all. If you have $GOPATH/bin added to your $PATH then&lt;/p&gt;
 
 &lt;h2 id=&#34;i-am-jacob-josiah-webber&#34;&gt;I am Jacob Josiah Webber&lt;/h2&gt;
 
-&lt;p&gt;Please download a pdf of my &lt;a href=&#34;https://jacobjwebber.github.io/cv.pdf&#34;&gt;cv&lt;/a&gt;.
+&lt;p&gt;Please download a pdf of my &lt;a href=&#34;https://jacobjwebber.github.io/cv.pdf&#34;&gt;CV&lt;/a&gt;.
 Or go back to my &lt;a href=&#34;https://jacobjwebber.github.io/&#34;&gt;home&lt;/a&gt; page for links to my social/github accounts.&lt;/p&gt;
 
 &lt;h2 id=&#34;academic&#34;&gt;Academic&lt;/h2&gt;
@@ -72,6 +108,29 @@ Or go back to my &lt;a href=&#34;https://jacobjwebber.github.io/&#34;&gt;home&lt
 &lt;ul&gt;
 &lt;li&gt;Physics and Music BSc&lt;/li&gt;
 &lt;li&gt;High Performance Computing MSc (in progress)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Research Projects:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://jacobjwebber.github.io/High-Precision-Parallel-Graphic-Equaliser-dissertation.pdf&#34;&gt;High Precision Parallel Graphic Equaliser&lt;/a&gt; - &lt;em&gt;Grade: A&lt;/em&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Audio Digital Signal Processing&lt;/li&gt;
+&lt;li&gt;Matlab&lt;/li&gt;
+&lt;li&gt;Complex Analysis&lt;/li&gt;
+&lt;li&gt;Advanced Fourier Theory&lt;br /&gt;
+&lt;br /&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Optimisation of 3D Room Acoustics Models - &lt;em&gt;In Progress&lt;/em&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Cuda Programming&lt;/li&gt;
+&lt;li&gt;Finite Difference Schemes&lt;/li&gt;
+&lt;li&gt;Numerical Methods&lt;/li&gt;
+&lt;li&gt;Partial Differential Equations&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h2 id=&#34;professional&#34;&gt;Professional&lt;/h2&gt;
@@ -103,6 +162,10 @@ infrastructure, with a little bit of NodeJS/Express. I gained experience with:&l
 &lt;p&gt;Growing up I had an interest in music, as well as mathematics and physics. I played the violin quite successfully,
 playing in a number of youth orchsestras, including as a soloist. I managed to combine these two separate interests
 in my undergraduate degree. This was in Physics and Music at the University of Edinburgh.&lt;/p&gt;
+
+&lt;p&gt;During my time at Edinburgh University I also played first violin with The Edinburgh University Chamber Orchestra, wrote
+a weekly column in &lt;em&gt;The Student Newspaper&lt;/em&gt; entitled &amp;ldquo;Webber&amp;rsquo;s World&amp;rdquo; and ran unsuccessfully to be president of the
+Students&amp;rsquo; Association.&lt;/p&gt;
 </description>
     </item>
     
