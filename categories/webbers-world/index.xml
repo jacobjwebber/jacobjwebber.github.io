@@ -1,49 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Jacob J Webber</title>
-    <link>https://jacobjwebber.github.io/</link>
-    <description>Recent content on Jacob J Webber</description>
+    <title>Webbers World on Jacob J Webber</title>
+    <link>https://jacobjwebber.github.io/categories/webbers-world/</link>
+    <description>Recent content in Webbers World on Jacob J Webber</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 15 Apr 2017 20:07:17 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 27 Jan 2015 20:07:17 +0000</lastBuildDate>
     
-	<atom:link href="https://jacobjwebber.github.io/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://jacobjwebber.github.io/categories/webbers-world/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>Are We All Living in a Simulation?</title>
-      <link>https://jacobjwebber.github.io/post/simulation/</link>
-      <pubDate>Sat, 15 Apr 2017 20:07:17 +0000</pubDate>
-      
-      <guid>https://jacobjwebber.github.io/post/simulation/</guid>
-      <description>Where do we come from? Why are we here? Do we even exist? The quest to answer these questions is so embedded in our nature that to ask them almost defines us as humans. But we are not the primitive creatures we once were. As our understanding of the world reaches new levels of sophistication, surely so must our solutions to these age old problems.
-That is the belief of an increasing number of scientists and tech luminaries such as Elon Musk, who recently stated that the odds were a billion to one against us living in a &amp;ldquo;base reality&amp;rdquo;.</description>
-    </item>
-    
-    <item>
-      <title>Building a Personal Website with Hugo</title>
-      <link>https://jacobjwebber.github.io/post/new-blog/</link>
-      <pubDate>Thu, 29 Dec 2016 20:07:17 +0000</pubDate>
-      
-      <guid>https://jacobjwebber.github.io/post/new-blog/</guid>
-      <description>New Blog! Where better to start a new blog than a blog post about how I made this blog.
-Over the last Christmas holidays I have started playing around with the Go programming languages. Wow! What a great programming language! At work I mainly wrote Java code, and at University I mainly use C. Go seems to combine a lot of the positive aspects of both. It also has a very interesting and neat model for writing parallel or concurrent programs.</description>
-    </item>
-    
-    <item>
-      <title>About Me</title>
-      <link>https://jacobjwebber.github.io/about/</link>
-      <pubDate>Thu, 29 Dec 2016 00:00:00 +0000</pubDate>
-      
-      <guid>https://jacobjwebber.github.io/about/</guid>
-      <description>I am Jacob Josiah Webber Please download a pdf of my CV. Or go back to my home page for links to my social/github accounts.
-Academic Degrees:
- Physics and Music BSc High Performance Computing MSc (in progress)  Research Projects:
- High Precision Parallel Graphic Equaliser - Grade: A
- Audio Digital Signal Processing Matlab Complex Analysis Advanced Fourier Theory
-  Optimisation of 3D Room Acoustics Models - In Progress</description>
-    </item>
     
     <item>
       <title>Webber’s World: In Praise of Love and Mediocrity</title>
