@@ -1,0 +1,78 @@
+
+<!DOCTYPE html>
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title> Autovocoder: Vocoding Without Spectrograms </title>
+	<style>
+	table, th, td {
+		border: 2px solid black;
+		border-spacing: 1px;
+		border-collapse: collapse;
+		padding: 3px;
+	}
+	th, td {
+		border: 1px solid black;
+		text-align: center;
+		width:10%;
+	}
+	.firstcol {
+		width: 10%;
+	}
+	audio {
+		width:80%;
+	}
+	</style>
+</head>
+
+
+<body>
+    <h1>Autovocoder: Vocoding Without Spectrograms</h1>
+    
+
+<table style="width:80%">
+	<tbody><tr>
+		<th class="firstcol">F0</th>
+		<th>Original</th>
+		<th>Autovocoder</th>
+		<th>WaveRNN</th>
+		<th>Bandpassed</th>
+		<th>Griffin-Lim</th>
+	</tr>
+	<tr>
+		<td class="firstcol">copy</td>
+		<td>
+			<audio controls="controls">
+				<source src="listening_test/orig/output_0.wav" type="audio/wav">
+					Your browser does not support the audio element.
+				
+			</audio>
+        </td>
+		<td>
+			<audio controls="controls">
+				<source src="listening_test/av/output_0.wav" type="audio/wav">
+					Your browser does not support the audio element.
+				
+			</audio>
+        </td>
+		<td>
+			<audio controls="controls">
+				<source src="listening_test/wavrnn/output_0.wav" type="audio/wav">
+					Your browser does not support the audio element.
+				
+			</audio>
+        </td>
+		<td>
+			<audio controls="controls">
+				<source src="listening_test/lp/output_0.wav" type="audio/wav">
+					Your browser does not support the audio element.
+				
+			</audio>
+        </td>
+		<td>
+			<audio controls="controls">
+				<source src="listening_test/gl/output_0.wav" type="audio/wav">
+					Your browser does not support the audio element.
+				
+			</audio>
+        </td>
+    </tr>
