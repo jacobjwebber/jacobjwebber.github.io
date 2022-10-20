@@ -1,0 +1,420 @@
+
+<!DOCTYPE html>
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title> Autovocoder: Vocoding Without Spectrograms </title>
+	<style>
+	table, th, td {
+		border: 2px solid black;
+		border-spacing: 1px;
+		border-collapse: collapse;
+		padding: 3px;
+	}
+	th, td {
+		border: 1px solid black;
+		text-align: center;
+		width:10%;
+	}
+	.firstcol {
+		width: 10%;
+	}
+	audio {
+		width:80%;
+	}
+	</style>
+</head>
+
+
+<body>
+    <h1>Autovocoder: Vocoding Without Spectrograms</h1>
+    
+
+<table style="width:80%">
+	<tbody><tr>
+		<th class="firstcol">Sample</th>
+		<th>Original</th>
+		<th>Autovocoder</th>
+		<th>WaveRNN</th>
+		<th>Bandpassed</th>
+		<th>Griffin-Lim</th>
+	</tr>
+	<tr>
+		<td class="firstcol">0</td>
+		<td>
+			<audio controls="controls">
+				<source src="listening_test/orig/output_0.wav" type="audio/wav">
+					Your browser does not support the audio element.
+				
+			</audio>
+        </td>
+		<td>
+			<audio controls="controls">
+				<source src="listening_test/av/output_0.wav" type="audio/wav">
+					Your browser does not support the audio element.
+				
+			</audio>
+        </td>
+		<td>
+			<audio controls="controls">
+				<source src="listening_test/wavrnn/output_0.wav" type="audio/wav">
+					Your browser does not support the audio element.
+				
+			</audio>
+        </td>
+		<td>
+			<audio controls="controls">
+				<source src="listening_test/lp/output_0.wav" type="audio/wav">
+					Your browser does not support the audio element.
+				
+			</audio>
+        </td>
+		<td>
+			<audio controls="controls">
+				<source src="listening_test/gl/output_0.wav" type="audio/wav">
+					Your browser does not support the audio element.
+				
+			</audio>
+        </td>
+    </tr>
+	<tr>
+		<td class="firstcol">1</td>
+		<td>
+			<audio controls="controls">
+				<source src="listening_test/orig/output_1.wav" type="audio/wav">
+					Your browser does not support the audio element.
+				
+			</audio>
+        </td>
+		<td>
+			<audio controls="controls">
+				<source src="listening_test/av/output_1.wav" type="audio/wav">
+					Your browser does not support the audio element.
+				
+			</audio>
+        </td>
+		<td>
+			<audio controls="controls">
+				<source src="listening_test/wavrnn/output_1.wav" type="audio/wav">
+					Your browser does not support the audio element.
+				
+			</audio>
+        </td>
+		<td>
+			<audio controls="controls">
+				<source src="listening_test/lp/output_1.wav" type="audio/wav">
+					Your browser does not support the audio element.
+				
+			</audio>
+        </td>
+		<td>
+			<audio controls="controls">
+				<source src="listening_test/gl/output_1.wav" type="audio/wav">
+					Your browser does not support the audio element.
+				
+			</audio>
+        </td>
+    </tr>
+	<tr>
+		<td class="firstcol">2</td>
+		<td>
+			<audio controls="controls">
+				<source src="listening_test/orig/output_2.wav" type="audio/wav">
+					Your browser does not support the audio element.
+				
+			</audio>
+        </td>
+		<td>
+			<audio controls="controls">
+				<source src="listening_test/av/output_2.wav" type="audio/wav">
+					Your browser does not support the audio element.
+				
+			</audio>
+        </td>
+		<td>
+			<audio controls="controls">
+				<source src="listening_test/wavrnn/output_2.wav" type="audio/wav">
+					Your browser does not support the audio element.
+				
+			</audio>
+        </td>
+		<td>
+			<audio controls="controls">
+				<source src="listening_test/lp/output_2.wav" type="audio/wav">
+					Your browser does not support the audio element.
+				
+			</audio>
+        </td>
+		<td>
+			<audio controls="controls">
+				<source src="listening_test/gl/output_2.wav" type="audio/wav">
+					Your browser does not support the audio element.
+				
+			</audio>
+        </td>
+    </tr>
+	<tr>
+		<td class="firstcol">3</td>
+		<td>
+			<audio controls="controls">
+				<source src="listening_test/orig/output_3.wav" type="audio/wav">
+					Your browser does not support the audio element.
+				
+			</audio>
+        </td>
+		<td>
+			<audio controls="controls">
+				<source src="listening_test/av/output_3.wav" type="audio/wav">
+					Your browser does not support the audio element.
+				
+			</audio>
+        </td>
+		<td>
+			<audio controls="controls">
+				<source src="listening_test/wavrnn/output_3.wav" type="audio/wav">
+					Your browser does not support the audio element.
+				
+			</audio>
+        </td>
+		<td>
+			<audio controls="controls">
+				<source src="listening_test/lp/output_3.wav" type="audio/wav">
+					Your browser does not support the audio element.
+				
+			</audio>
+        </td>
+		<td>
+			<audio controls="controls">
+				<source src="listening_test/gl/output_3.wav" type="audio/wav">
+					Your browser does not support the audio element.
+				
+			</audio>
+        </td>
+    </tr>
+	<tr>
+		<td class="firstcol">4</td>
+		<td>
+			<audio controls="controls">
+				<source src="listening_test/orig/output_4.wav" type="audio/wav">
+					Your browser does not support the audio element.
+				
+			</audio>
+        </td>
+		<td>
+			<audio controls="controls">
+				<source src="listening_test/av/output_4.wav" type="audio/wav">
+					Your browser does not support the audio element.
+				
+			</audio>
+        </td>
+		<td>
+			<audio controls="controls">
+				<source src="listening_test/wavrnn/output_4.wav" type="audio/wav">
+					Your browser does not support the audio element.
+				
+			</audio>
+        </td>
+		<td>
+			<audio controls="controls">
+				<source src="listening_test/lp/output_4.wav" type="audio/wav">
+					Your browser does not support the audio element.
+				
+			</audio>
+        </td>
+		<td>
+			<audio controls="controls">
+				<source src="listening_test/gl/output_4.wav" type="audio/wav">
+					Your browser does not support the audio element.
+				
+			</audio>
+        </td>
+    </tr>
+	<tr>
+		<td class="firstcol">5</td>
+		<td>
+			<audio controls="controls">
+				<source src="listening_test/orig/output_5.wav" type="audio/wav">
+					Your browser does not support the audio element.
+				
+			</audio>
+        </td>
+		<td>
+			<audio controls="controls">
+				<source src="listening_test/av/output_5.wav" type="audio/wav">
+					Your browser does not support the audio element.
+				
+			</audio>
+        </td>
+		<td>
+			<audio controls="controls">
+				<source src="listening_test/wavrnn/output_5.wav" type="audio/wav">
+					Your browser does not support the audio element.
+				
+			</audio>
+        </td>
+		<td>
+			<audio controls="controls">
+				<source src="listening_test/lp/output_5.wav" type="audio/wav">
+					Your browser does not support the audio element.
+				
+			</audio>
+        </td>
+		<td>
+			<audio controls="controls">
+				<source src="listening_test/gl/output_5.wav" type="audio/wav">
+					Your browser does not support the audio element.
+				
+			</audio>
+        </td>
+    </tr>
+	<tr>
+		<td class="firstcol">6</td>
+		<td>
+			<audio controls="controls">
+				<source src="listening_test/orig/output_6.wav" type="audio/wav">
+					Your browser does not support the audio element.
+				
+			</audio>
+        </td>
+		<td>
+			<audio controls="controls">
+				<source src="listening_test/av/output_6.wav" type="audio/wav">
+					Your browser does not support the audio element.
+				
+			</audio>
+        </td>
+		<td>
+			<audio controls="controls">
+				<source src="listening_test/wavrnn/output_6.wav" type="audio/wav">
+					Your browser does not support the audio element.
+				
+			</audio>
+        </td>
+		<td>
+			<audio controls="controls">
+				<source src="listening_test/lp/output_6.wav" type="audio/wav">
+					Your browser does not support the audio element.
+				
+			</audio>
+        </td>
+		<td>
+			<audio controls="controls">
+				<source src="listening_test/gl/output_6.wav" type="audio/wav">
+					Your browser does not support the audio element.
+				
+			</audio>
+        </td>
+    </tr>
+	<tr>
+		<td class="firstcol">7</td>
+		<td>
+			<audio controls="controls">
+				<source src="listening_test/orig/output_7.wav" type="audio/wav">
+					Your browser does not support the audio element.
+				
+			</audio>
+        </td>
+		<td>
+			<audio controls="controls">
+				<source src="listening_test/av/output_7.wav" type="audio/wav">
+					Your browser does not support the audio element.
+				
+			</audio>
+        </td>
+		<td>
+			<audio controls="controls">
+				<source src="listening_test/wavrnn/output_7.wav" type="audio/wav">
+					Your browser does not support the audio element.
+				
+			</audio>
+        </td>
+		<td>
+			<audio controls="controls">
+				<source src="listening_test/lp/output_7.wav" type="audio/wav">
+					Your browser does not support the audio element.
+				
+			</audio>
+        </td>
+		<td>
+			<audio controls="controls">
+				<source src="listening_test/gl/output_7.wav" type="audio/wav">
+					Your browser does not support the audio element.
+				
+			</audio>
+        </td>
+    </tr>
+	<tr>
+		<td class="firstcol">8</td>
+		<td>
+			<audio controls="controls">
+				<source src="listening_test/orig/output_8.wav" type="audio/wav">
+					Your browser does not support the audio element.
+				
+			</audio>
+        </td>
+		<td>
+			<audio controls="controls">
+				<source src="listening_test/av/output_8.wav" type="audio/wav">
+					Your browser does not support the audio element.
+				
+			</audio>
+        </td>
+		<td>
+			<audio controls="controls">
+				<source src="listening_test/wavrnn/output_8.wav" type="audio/wav">
+					Your browser does not support the audio element.
+				
+			</audio>
+        </td>
+		<td>
+			<audio controls="controls">
+				<source src="listening_test/lp/output_8.wav" type="audio/wav">
+					Your browser does not support the audio element.
+				
+			</audio>
+        </td>
+		<td>
+			<audio controls="controls">
+				<source src="listening_test/gl/output_8.wav" type="audio/wav">
+					Your browser does not support the audio element.
+				
+			</audio>
+        </td>
+    </tr>
+	<tr>
+		<td class="firstcol">9</td>
+		<td>
+			<audio controls="controls">
+				<source src="listening_test/orig/output_9.wav" type="audio/wav">
+					Your browser does not support the audio element.
+				
+			</audio>
+        </td>
+		<td>
+			<audio controls="controls">
+				<source src="listening_test/av/output_9.wav" type="audio/wav">
+					Your browser does not support the audio element.
+				
+			</audio>
+        </td>
+		<td>
+			<audio controls="controls">
+				<source src="listening_test/wavrnn/output_9.wav" type="audio/wav">
+					Your browser does not support the audio element.
+				
+			</audio>
+        </td>
+		<td>
+			<audio controls="controls">
+				<source src="listening_test/lp/output_9.wav" type="audio/wav">
+					Your browser does not support the audio element.
+				
+			</audio>
+        </td>
+		<td>
+			<audio controls="controls">
+				<source src="listening_test/gl/output_9.wav" type="audio/wav">
+					Your browser does not support the audio element.
+				
+			</audio>
+        </td>
+    </tr>
